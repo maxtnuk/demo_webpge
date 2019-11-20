@@ -7,4 +7,4 @@ ADD package.json /app
 
 RUN npm install
 
-CMD ["npm","run server"]
+CMD ["npm","run","server"]
