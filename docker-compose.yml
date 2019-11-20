@@ -10,5 +10,12 @@ services:
         REMOTE_HOST: ubuntu
         REMOTE_NAME: virt
     image: "maxtnt/docker_alpine_aws:nodejs"
+  demo:
+    build:
+      context: .
+      dockerfile: ./docker/demoWeb/Dockerfile
+    image: "demo"
+    ports:
+      - "8080:8080"
 
 
