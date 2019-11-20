@@ -1,4 +1,4 @@
-FROM nikolaik/python-nodejs
+FROM node:lts-alpine
 
 ADD public /app
 ADD src /app
