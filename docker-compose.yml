@@ -1,0 +1,14 @@
+version: '3.7'
+services:
+  base_server:
+    build:
+      context: ./docker/base_server/
+      dockerfile: Dockerfile
+      args:
+        REMOTE_IP: 54.180.124.55
+        REMOTE_SSH_FILE: /base/user_instance.pem
+        REMOTE_HOST: ubuntu
+        REMOTE_NAME: virt
+    image: "maxtnt/docker_alpine_aws:nodejs"
+
+
